@@ -21,11 +21,11 @@ This project provides a versatile and efficient foundation for building modern V
    ```bash
    git clone -b js --single-branch https://github.com/thinhphoenix/laith.vuefw.git <project-name>
    ```
-   For js version.
+   `For js version.`
     ```bash
    git clone -b ts --single-branch https://github.com/thinhphoenix/laith.vuefw.git <project-name>
    ```
-   For ts version.
+   `For ts version.`
 
 3. **Install dependencies:**
    ```bash
