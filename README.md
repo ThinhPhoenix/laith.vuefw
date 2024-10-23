@@ -23,13 +23,13 @@ This project provides a robust foundation for building modern Vue applications, 
    ```
 
 2. **Install dependencies:**
-   ```bash
+   ```node
    cd laith.vuefw
-   npm install
+   npm i
    ```
 
 3. **Start the development server:**
-   ```bash
+   ```node
    npm run dev
    ```
 
