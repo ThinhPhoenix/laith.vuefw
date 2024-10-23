@@ -1,11 +1,12 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 
 // Dynamically import all view components from the views directory
 const routeModules = import.meta.glob("@/views/*.vue");
 
-const routes = Object.keys(routeModules).map((path) => {
+// Define routes array with proper typing
+const routes: Array<RouteRecordRaw> = Object.keys(routeModules).map((path) => {
   // Extract the name from the file path
-  const name = path.match(/\/views\/(.*)\.vue$/)[1];
+  const name = path.match(/\/views\/(.*)\.vue$/)?.[1] || '';
 
   // Match all parameters enclosed in brackets [id]
   const paramMatches = [...name.matchAll(/\[(.*?)\]/g)];
@@ -29,9 +30,8 @@ const routes = Object.keys(routeModules).map((path) => {
     adjustedName = "Page";
   } else if (name.includes('.')) {
     // Extract the last segment after the last dot
-    adjustedName = name.split('.').pop(); // Get the last part, e.g., "Page2" from "Page1.Page2"
+    adjustedName = name.split('.').pop() || ''; // Get the last part
   } else if (paramNames.length > 0) {
-    // If it contains parameters like [id] or [id][id2], return the base name before parameters
     adjustedName = name.replace(/\[.*?\]/g, '').trim(); // Remove parameters and trim
   } else {
     adjustedName = name; // Default case
@@ -41,7 +41,7 @@ const routes = Object.keys(routeModules).map((path) => {
     path: formattedPath,
     name: adjustedName, // Clean the name for the route
     component: routeModules[path], // Lazy load the component
-  };
+  } as RouteRecordRaw; // Cast to RouteRecordRaw
 });
 
 // Optionally add a default route
