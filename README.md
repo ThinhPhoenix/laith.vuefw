@@ -42,17 +42,17 @@ This project provides a robust foundation for building modern Vue applications, 
 laith.vuefw/
 ├── index.html
 ├── src/
-│   ├── main.ts
+│   ├── main.js
 │   ├── components/
-│   │   └── HelloWorld.vue
+│   │   ├── Monalisa.vue
+│   │   └── Redirect.vue
 │   ├── views/
 │   │   ├── Index.vue
 │   │   └── 404.vue
 │   ├── App.vue
 │   ├── router/
 │   │   └── index.js
-│   └── styles/
-│       └── index.css
+│   └── global.css
 └── vite.config.js
 ```
 
