@@ -2,26 +2,37 @@ import { execSync } from 'child_process';
 import * as fs from 'fs';
 import * as path from 'path';
 
-// Function to install Pinia
-function installPinia() {
-  console.log('Installing Pinia...');
-  execSync('npm i pinia', { stdio: 'inherit' });
-  console.log('Pinia installed successfully.');
-}
-
-// Function to create 'stores' directory
-function createStoresDirectory() {
-  const storesDir = path.join(process.cwd(), 'src', 'stores');
-  if (!fs.existsSync(storesDir)) {
-    console.log('Creating stores directory...');
-    fs.mkdirSync(storesDir, { recursive: true });
-    console.log('Stores directory created.');
-  } else {
-    console.log('Stores directory already exists.');
+// Function to uninstall Pinia silently, with error reporting
+function uninstallPinia() {
+  try {
+    execSync('npm uninstall pinia', { stdio: 'ignore' });
+  } catch (error) {
+    console.error('Error uninstalling Pinia:', error);
   }
 }
 
-// Function to update main.js or main.ts
+// Function to install Pinia silently, with error reporting
+function installPinia() {
+  try {
+    execSync('npm install pinia', { stdio: 'ignore' });
+  } catch (error) {
+    console.error('Error installing Pinia:', error);
+  }
+}
+
+// Function to create 'stores' directory silently, with error reporting
+function createStoresDirectory() {
+  const storesDir = path.join(process.cwd(), 'src', 'stores');
+  try {
+    if (!fs.existsSync(storesDir)) {
+      fs.mkdirSync(storesDir, { recursive: true });
+    }
+  } catch (error) {
+    console.error('Error creating stores directory:', error);
+  }
+}
+
+// Function to update main.js or main.ts silently and replace specific comments
 function updateMainFile() {
   const mainFilePathJs = path.join(process.cwd(), 'src', 'main.js');
   const mainFilePathTs = path.join(process.cwd(), 'src', 'main.ts');
@@ -32,33 +43,56 @@ function updateMainFile() {
     return;
   }
 
-  const content = fs.readFileSync(mainFilePath, 'utf8');
+  try {
+    const content = fs.readFileSync(mainFilePath, 'utf8');
 
-  // Check if Pinia is already set up
-  if (content.includes('createPinia')) {
-    console.log('Pinia is already set up.');
-    return;
-  }
+    // Check if Pinia is already set up based on the comments
+    if (content.includes('import { createPinia } from \'pinia\'')) {
+      return;
+    }
 
-  // Add import for createPinia and update the app initialization
-  const importPinia = `import { createPinia } from 'pinia';\n`;
-  const piniaSetup = `.use(createPinia())`;
+    // Replace the comment blocks with the necessary Pinia code
+    const updatedContent = content
+      .replace(
+        '/*import-laith.vuefw-pinia*/',
+        `import { createPinia } from 'pinia';`
+      )
+      .replace(
+        '/*laith.vuefw-pinia*/',
+        `.use(createPinia())`
+      );
 
-  const updatedContent = content.replace(
-    /(createApp\(App\)\s*\.use\(router\))/,
-    `$1${piniaSetup}`
-  );
-
-  if (!content.includes('createPinia')) {
-    const newContent = importPinia + updatedContent;
-    fs.writeFileSync(mainFilePath, newContent, 'utf8');
-    console.log('Pinia setup added to main.js.');
+    fs.writeFileSync(mainFilePath, updatedContent, 'utf8');
+  } catch (error) {
+    console.error('Error updating main.js:', error);
   }
 }
 
-// Run the setup process
-installPinia();
+// Function to show a loading animation
+function loadingAnimation() {
+  const messages = ['laith.vuefw installing', 'laith.vuefw installing.', 'laith.vuefw installing..', 'laith.vuefw installing...'];
+  let i = 0;
+
+  const interval = setInterval(() => {
+    process.stdout.write(`\r\x1b[33m${messages[i]} \x1b[0m`); // Orange color
+    i = (i + 1) % messages.length;
+  }, 500);
+
+  return interval;
+}
+
+// Run the setup process silently
+uninstallPinia();  // Uninstall Pinia first
+installPinia();    // Then install Pinia
+
+// Start loading animation
+const animationInterval = loadingAnimation();
+
 createStoresDirectory();
 updateMainFile();
 
-console.log('Pinia setup completed.');
+// Stop loading animation
+clearInterval(animationInterval);
+
+// Log a success message in blue
+console.log('\x1b[34m%s\x1b[0m', 'Hello Pinia!'); // Blue-colored message
