@@ -19,21 +19,26 @@ This project provides a versatile and efficient foundation for building modern V
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/thinhphoenix/laith.vuefw.git <project-name>
+   git clone -b js --single-branch https://github.com/thinhphoenix/laith.vuefw.git <project-name>
    ```
+   For js version.
+    ```bash
+   git clone -b ts --single-branch https://github.com/thinhphoenix/laith.vuefw.git <project-name>
+   ```
+   For ts version.
 
-2. **Install dependencies:**
+3. **Install dependencies:**
    ```bash
    cd <project-name>
    npm install
    ```
 
-3. **Start the development server:**
+4. **Start the development server:**
    ```bash
    npm run dev
    ```
 
-4. **Access the application** at `http://localhost:5173/`.
+5. **Access the application** at `http://localhost:5173/`.
 
 ### 📂 Project Structure
 
