@@ -19,7 +19,7 @@ This project provides a robust foundation for building modern Vue applications, 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/laith.vuefw.git
+   git clone https://github.com/thinhphoenix/laith.vuefw.git
    ```
 
 2. **Install dependencies:**
