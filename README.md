@@ -24,7 +24,7 @@ This project provides a versatile and efficient foundation for building modern V
 
 2. **Install dependencies:**
    ```bash
-   cd laith.vuefw
+   cd <project-name>
    npm install
    ```
 
