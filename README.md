@@ -19,7 +19,7 @@ This project provides a versatile and efficient foundation for building modern V
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/thinhphoenix/laith.vuefw.git
+   git clone https://github.com/thinhphoenix/laith.vuefw.git <project-name>
    ```
 
 2. **Install dependencies:**
