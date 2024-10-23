@@ -88,11 +88,14 @@ installPinia();    // Then install Pinia
 // Start loading animation
 const animationInterval = loadingAnimation();
 
-createStoresDirectory();
-updateMainFile();
+// Wait for a specified duration to show loading animation
+setTimeout(() => {
+  // Stop loading animation
+  clearInterval(animationInterval);
+  
+  createStoresDirectory();
+  updateMainFile();
 
-// Stop loading animation
-clearInterval(animationInterval);
-
-// Log a success message in blue
-console.log('\x1b[34m%s\x1b[0m', 'Hello Pinia!'); // Blue-colored message
+  // Log a success message in blue
+  console.log('\x1b[34m%s\x1b[0m', 'Hello Pinia!'); // Blue-colored message
+}, 3000); // Change this value if you want a longer or shorter loading time
