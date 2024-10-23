@@ -32,6 +32,35 @@ function createStoresDirectory() {
   }
 }
 
+// Function to create a counter store template
+function createCounterStore() {
+  const counterStorePath = path.join(process.cwd(), 'src', 'stores', 'counter.js');
+  const counterStoreContent = `import { defineStore } from 'pinia';
+
+export const useCounterStore = defineStore('counter', {
+  state: () => ({
+    count: 0,
+  }),
+  actions: {
+    increment() {
+      this.count++;
+    },
+    decrement() {
+      this.count--;
+    },
+    reset() {
+      this.count = 0;
+    },
+  },
+});`;
+
+  try {
+    fs.writeFileSync(counterStorePath, counterStoreContent, 'utf8');
+  } catch (error) {
+    console.error('Error creating counter store:', error);
+  }
+}
+
 // Function to update main.js or main.ts silently and replace specific comments
 function updateMainFile() {
   const mainFilePathJs = path.join(process.cwd(), 'src', 'main.js');
@@ -95,6 +124,7 @@ setTimeout(() => {
   
   createStoresDirectory();
   updateMainFile();
+  createCounterStore();  // Create the counter store template
 
   // Log a success message in blue
   console.log('\x1b[34m%s\x1b[0m', 'Hello Pinia!'); // Blue-colored message
