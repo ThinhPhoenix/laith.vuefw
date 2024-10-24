@@ -65,7 +65,8 @@ laith.vuefw/
 - **Tailwind CSS**: Customize the appearance of your application with Tailwind’s utility classes. For more details, refer to the [Tailwind CSS Documentation](https://tailwindcss.com/docs/).
 - **Vue Router**: Modify routing and navigation in the `src/router/index.js` file.
 - **Modular Components**: Add new UI components by placing them in the `src/components` directory.
-- <img src="https://skillicons.dev/icons?i=pinia&theme=light" alt="Router" width="20" height="20"> **Pinia**: Run terminal code `node .laith.vuefw\pinia` at root to automatically install and setup pinia.
+- <img src="https://skillicons.dev/icons?i=pinia&theme=light" alt="Router" width="20" height="20"> **Pinia**: Run terminal code `npm run use pinia` at root to automatically install and setup pinia.
+- <img src="https://skillicons.dev/icons?i=tailwind&theme=light" alt="Router" width="20" height="20"> **TailwindCSS**: Run terminal code `npm run use tailwind` at root to automatically install and setup tailwind.
 
 ### 💡 Contributing
 
