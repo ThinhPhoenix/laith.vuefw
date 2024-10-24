@@ -97,16 +97,22 @@ function updateMainFile() {
     const fileContent = fs.readFileSync(fileToUpdate, "utf8");
     if (fileContent.includes("import { createPinia } from 'pinia'")) return;
 
-    const updatedContent = fileContent.replace(
-      "/*import-laith.vuefw-pinia*/",
+    const updatedImport = fileContent.replace(
+      "// @pinia",
       `
 import { createPinia } from 'pinia';
-const pinia = createPinia();
-app.use(pinia);
 `
     );
 
-    fs.writeFileSync(fileToUpdate, updatedContent, "utf8");
+    const updatedCode = fileContent.replace(
+      "// #pinia",
+      `
+.use(createPinia())
+`
+    );
+
+    fs.writeFileSync(fileToUpdate, updatedImport, "utf8");
+    fs.writeFileSync(fileToUpdate, updatedCode, "utf8");
   } catch (error) {
     console.error("Error updating main.js:", error);
   }
