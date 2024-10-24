@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "use": "node .\\laith.vuefw\\"
+    "use": "node .\\laith.vuefw\\use.js"
   },
   "dependencies": {
     "laith.vuefw": "file:",
