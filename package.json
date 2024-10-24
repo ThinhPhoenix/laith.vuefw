@@ -1,12 +1,13 @@
 {
   "name": "lath.vuefw",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "use": "node ./.laith.vuefw/use"
   },
   "dependencies": {
     "lath.vuefw": "file:",
@@ -16,9 +17,6 @@
   "devDependencies": {
     "@types/node": "^22.7.9",
     "@vitejs/plugin-vue": "^5.1.4",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.14",
     "typescript": "~5.6.2",
     "vite": "^5.4.9",
     "vue-tsc": "^2.1.6"
