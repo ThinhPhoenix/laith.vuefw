@@ -3,15 +3,15 @@
     <div
       class="bg-[#3030307e] backdrop-blur-sm rounded-lg p-6 border border-emerald-600 border-opacity-50 shadow-lg"
     >
-      <span class="text-gray-200">
+      <div>
         <span class="text-gray-200">
           Run <code class="highlight">npm run use tailwind</code> in terminal
           <br />
         </span>
-        <span class="text-sm text-gray-300">
+        <span class="text-sm text-gray-300 mt-3">
           TailwindCSS already setup you can use it without any hesitaion.
         </span>
-      </span>
+      </div>
       <div>
         <span
           >Back to
