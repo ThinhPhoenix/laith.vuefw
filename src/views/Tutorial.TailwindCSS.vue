@@ -1,22 +1,19 @@
 <template>
-  <div class="flex justify-center items-center h-screen">
-    <div
-      class="bg-[#3030307e] backdrop-blur-sm rounded-lg p-6 border border-emerald-600 border-opacity-50 shadow-lg"
-    >
-      <div>
-        <span class="text-gray-200">
+  <div class="container">
+    <div class="box">
+      <div class="content">
+        <span class="text-main">
           Run <code class="highlight">npm run use tailwind</code> in terminal
-          <br />
         </span>
-        <span class="text-sm text-gray-300 mt-3">
-          TailwindCSS already setup you can use it without any hesitaion.
+        <span class="text-small">
+          TailwindCSS already setup, you can use it without any hesitation.
         </span>
       </div>
       <div>
-        <span
-          >Back to
+        <span>
+          Back to
           <router-link to="/">
-            <redirect class="mt-5 font-normal">root</redirect>
+            <redirect class="link">root</redirect>
           </router-link>
         </span>
       </div>
@@ -29,11 +26,46 @@ import Redirect from "@/components/Redirect.vue";
 </script>
 
 <style scoped>
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 20px); /* Adjust based on actual header/footer height */
+}
+
+.box {
+  background-color: rgba(48, 48, 48, 0.5);
+  backdrop-filter: blur(4px);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(16, 185, 129, 0.5);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-main {
+  color: #e0e0e0;
+}
+
+.text-small {
+  font-size: 0.875rem;
+  color: #d1d1d1;
+  margin-top: 1rem;
+}
+
 code.highlight {
   background-color: rgba(55, 245, 112, 0.15);
   color: #32ff6f;
   padding: 3px;
   border-radius: 4px;
   border: 0.5px solid #32ff6fd2;
+}
+
+.link {
+  margin-top: 1.25rem;
 }
 </style>

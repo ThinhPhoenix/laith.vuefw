@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-    font-family: "JetBrains Mono", monospace; /* Move this to a selector if needed */
+    font-family: "JetBrains Mono", monospace;
 
     --color: rgba(114, 114, 114, 0.3);
     background-color: #191a1a;

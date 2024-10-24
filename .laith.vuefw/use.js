@@ -1,275 +1,282 @@
-/**
- * @use <command>
- * @example
- * `npm run use pinia`
- * This will run the 'pinia' command.
- * Setup and Config automatically
- * @returns `🍍 Pinia installation complete!`
- * @author thinhphoenix
- * @version 1.0.1
- */
-import * as path from "path"; // Add this line at the top of your file
-
-const _0x824e8b = _0x5a66;
-(function (_0x113d5c, _0x4d1226) {
-  const _0x18dca4 = _0x5a66,
-    _0x9b6a3a = _0x113d5c();
-  while (!![]) {
-    try {
-      const _0xe01262 =
-        (parseInt(_0x18dca4(0xe9)) / 0x1) * (-parseInt(_0x18dca4(0xdf)) / 0x2) +
-        -parseInt(_0x18dca4(0xcf)) / 0x3 +
-        (parseInt(_0x18dca4(0xea)) / 0x4) * (-parseInt(_0x18dca4(0xeb)) / 0x5) +
-        (parseInt(_0x18dca4(0xcd)) / 0x6) * (parseInt(_0x18dca4(0xcb)) / 0x7) +
-        parseInt(_0x18dca4(0xe4)) / 0x8 +
-        -parseInt(_0x18dca4(0xdb)) / 0x9 +
-        (parseInt(_0x18dca4(0xda)) / 0xa) * (parseInt(_0x18dca4(0xdc)) / 0xb);
-      if (_0xe01262 === _0x4d1226) break;
-      else _0x9b6a3a["push"](_0x9b6a3a["shift"]());
-    } catch (_0x1ea1b0) {
-      _0x9b6a3a["push"](_0x9b6a3a["shift"]());
-    }
-  }
-})(_0x1c6d, 0x8d310);
-import { execSync } from "child_process";
-function _0x5a66(_0x2d9b2a, _0xd87152) {
-  const _0x1c6d7c = _0x1c6d();
+function _0x4c3f(_0x14cb94, _0x1d96e4) {
+  const _0x1b3ab2 = _0x1b3a();
   return (
-    (_0x5a66 = function (_0x5a66af, _0x576cf9) {
-      _0x5a66af = _0x5a66af - 0xc7;
-      let _0x3c99d9 = _0x1c6d7c[_0x5a66af];
-      return _0x3c99d9;
+    (_0x4c3f = function (_0x4c3f8d, _0x4a1198) {
+      _0x4c3f8d = _0x4c3f8d - 0x6e;
+      let _0x4cfe20 = _0x1b3ab2[_0x4c3f8d];
+      return _0x4cfe20;
     }),
-    _0x5a66(_0x2d9b2a, _0xd87152)
+    _0x4c3f(_0x14cb94, _0x1d96e4)
   );
 }
-function _0x1c6d() {
-  const _0x4824ad = [
-    "1299816LlGEfl",
-    "error",
-    "utf8",
-    "main.ts",
-    "stores",
-    "Error\x20creating\x20counter\x20store:",
-    "Error\x20creating\x20stores\x20directory:",
-    "\x0aimport\x20{\x20defineStore\x20}\x20from\x20\x27pinia\x27;\x0a\x0aexport\x20const\x20useCounterStore\x20=\x20defineStore(\x27counter\x27,\x20{\x0a\x20\x20\x20\x20state:\x20()\x20=>\x20({\x0a\x20\x20\x20\x20\x20\x20\x20\x20count:\x200,\x0a\x20\x20\x20\x20}),\x0a\x20\x20\x20\x20actions:\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20increment()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20this.count++;\x0a\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20decrement()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20this.count--;\x0a\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20\x20\x20\x20\x20reset()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20this.count\x20=\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20},\x0a\x20\x20\x20\x20},\x0a});\x0a",
-    "writeFileSync",
-    "cwd",
-    "main.js\x20or\x20main.ts\x20not\x20found!",
-    "3750820nuTNDH",
-    "4074138gVEBfB",
-    "44VpGPKq",
-    "counter.js",
-    "inherit",
-    "2750NJCjhH",
-    "Error\x20uninstalling\x20Pinia:",
-    "existsSync",
-    ".use(createPinia())\x20//\x20#pinia",
-    "includes",
-    "966696emoDmu",
-    "//\x20#pinia",
-    "join",
-    "readFileSync",
-    "slice",
-    "815DvGVxa",
-    "350636kmILDE",
-    "5dUDQYv",
-    "argv",
-    "main.js",
-    "Running\x20Pinia\x20installation...",
-    "src",
-    "7tolemv",
-    "Error\x20installing\x20Pinia:",
-    "6308358DhApWs",
-    "replace",
-  ];
-  _0x1c6d = function () {
-    return _0x4824ad;
-  };
-  return _0x1c6d();
-}
-import * as _0x1045e1 from "fs";
-import * as _0x7d3d9 from "path";
-const args = process[_0x824e8b(0xc7)][_0x824e8b(0xe8)](0x2),
-  command = args[_0x824e8b(0xe6)]("\x20"),
-  pinia = () => {
-    const _0x5ab96 = _0x824e8b;
-    console["log"]("\x1b[38;5;208m%s\x1b[0m", _0x5ab96(0xc9)),
-      uninstallPinia(),
-      installPinia(),
-      createStoresDirectory(),
-      updateMainFile(),
-      createCounterStore(),
-      console["log"](
-        "\x1b[33m%s\x1b[0m\x1b[34m%s\x1b[0m",
-        "🍍\x20Pinia\x20",
-        "installation\x20complete!"
-      );
-  };
-function uninstallPinia() {
-  const _0x125385 = _0x824e8b;
-  try {
-    execSync("npm\x20uninstall\x20pinia", { stdio: _0x125385(0xde) });
-  } catch (_0x1e4042) {
-    console[_0x125385(0xd0)](_0x125385(0xe0), _0x1e4042);
-  }
-}
-function installPinia() {
-  const _0x475ec4 = _0x824e8b;
-  try {
-    execSync("npm\x20i\x20pinia", { stdio: "inherit" });
-  } catch (_0x31af0e) {
-    console[_0x475ec4(0xd0)](_0x475ec4(0xcc), _0x31af0e);
-  }
-}
-function createStoresDirectory() {
-  const _0x3f87bf = _0x824e8b,
-    _0x4579a4 = _0x7d3d9["join"](process[_0x3f87bf(0xd8)](), "src", "stores");
-  try {
-    !_0x1045e1[_0x3f87bf(0xe1)](_0x4579a4) &&
-      _0x1045e1["mkdirSync"](_0x4579a4, { recursive: !![] });
-  } catch (_0x2d59c8) {
-    console[_0x3f87bf(0xd0)](_0x3f87bf(0xd5), _0x2d59c8);
-  }
-}
-function createCounterStore() {
-  const _0x26cd76 = _0x824e8b,
-    _0x1c2a27 = _0x7d3d9[_0x26cd76(0xe6)](
-      process[_0x26cd76(0xd8)](),
-      "src",
-      _0x26cd76(0xd3),
-      _0x26cd76(0xdd)
-    ),
-    _0x568ddb = _0x26cd76(0xd6);
-  try {
-    _0x1045e1[_0x26cd76(0xd7)](_0x1c2a27, _0x568ddb, _0x26cd76(0xd1));
-  } catch (_0xc9576) {
-    console[_0x26cd76(0xd0)](_0x26cd76(0xd4), _0xc9576);
-  }
-}
-function updateMainFile() {
-  const _0x3fc211 = _0x824e8b,
-    _0x3afe40 = _0x7d3d9[_0x3fc211(0xe6)](
-      process[_0x3fc211(0xd8)](),
-      _0x3fc211(0xca),
-      _0x3fc211(0xc8)
-    ),
-    _0x186cd4 = _0x7d3d9["join"](
-      process[_0x3fc211(0xd8)](),
-      _0x3fc211(0xca),
-      _0x3fc211(0xd2)
-    ),
-    _0x4ac9d1 = _0x1045e1["existsSync"](_0x186cd4) ? _0x186cd4 : _0x3afe40;
-  if (!_0x1045e1["existsSync"](_0x4ac9d1)) {
-    console[_0x3fc211(0xd0)](_0x3fc211(0xd9));
-    return;
-  }
-  try {
-    const _0x5548d9 = _0x1045e1[_0x3fc211(0xe7)](_0x4ac9d1, "utf8");
-    if (
-      _0x5548d9[_0x3fc211(0xe3)](
-        "import\x20{\x20createPinia\x20}\x20from\x20\x27pinia\x27"
-      )
-    )
-      return;
-    const _0x2b31ce = _0x5548d9[_0x3fc211(0xce)](
-        "//\x20@pinia",
-        "import\x20{\x20createPinia\x20}\x20from\x20\x27pinia\x27;\x20//\x20@pinia"
-      ),
-      _0x5978c1 = _0x2b31ce[_0x3fc211(0xce)](_0x3fc211(0xe5), _0x3fc211(0xe2));
-    _0x1045e1[_0x3fc211(0xd7)](_0x4ac9d1, _0x5978c1, _0x3fc211(0xd1));
-  } catch (_0x1d204b) {
-    console[_0x3fc211(0xd0)]("Error\x20updating\x20main.js:", _0x1d204b);
-  }
-}
-
-(function (_0x46ce09, _0x261b27) {
-  const _0x4a26f5 = _0x3251,
-    _0x2d80e4 = _0x46ce09();
-  while (!![]) {
-    try {
-      const _0x53d93a =
-        (parseInt(_0x4a26f5(0x78)) / 0x1) * (-parseInt(_0x4a26f5(0x82)) / 0x2) +
-        parseInt(_0x4a26f5(0x7a)) / 0x3 +
-        -parseInt(_0x4a26f5(0x7e)) / 0x4 +
-        (-parseInt(_0x4a26f5(0x79)) / 0x5) *
-          (-parseInt(_0x4a26f5(0x7d)) / 0x6) +
-        (-parseInt(_0x4a26f5(0x7f)) / 0x7) *
-          (-parseInt(_0x4a26f5(0x84)) / 0x8) +
-        -parseInt(_0x4a26f5(0x7c)) / 0x9 +
-        (-parseInt(_0x4a26f5(0x7b)) / 0xa) * (-parseInt(_0x4a26f5(0x80)) / 0xb);
-      if (_0x53d93a === _0x261b27) break;
-      else _0x2d80e4["push"](_0x2d80e4["shift"]());
-    } catch (_0x118faa) {
-      _0x2d80e4["push"](_0x2d80e4["shift"]());
-    }
-  }
-})(_0x268d, 0x9702c);
-function _0x3251(_0x113b03, _0x26a6eb) {
-  const _0x268de2 = _0x268d();
-  return (
-    (_0x3251 = function (_0x325169, _0x323d54) {
-      _0x325169 = _0x325169 - 0x78;
-      let _0x13f8ce = _0x268de2[_0x325169];
-      return _0x13f8ce;
-    }),
-    _0x3251(_0x113b03, _0x26a6eb)
-  );
-}
-const help = () => {
-  const _0x1258d1 = _0x3251;
-  ls[_0x1258d1(0x81)]((_0x5be96f, _0x4ae370) => {
-    const _0x285e71 = _0x1258d1;
-    console[_0x285e71(0x83)](
-      _0x285e71(0x85),
-      _0x4ae370 + 0x1 + ".\x20npm\x20run\x20use",
-      "\x20" + _0x5be96f
-    );
-  });
-  console.log();
-};
-function _0x268d() {
-  const _0x239e59 = [
-    "forEach",
-    "698316SjpOUs",
-    "log",
-    "91128yYuJXT",
+function _0x1b3a() {
+  const _0x1cbc5a = [
+    "12730110NtCiZh",
+    "red",
+    ".use(createPinia());\x20//#pinia",
+    "tailwind\x20🌊",
+    "pinia",
+    "2521705EdnWPR",
+    "669KgXilG",
+    "Error\x20updating\x20main.js:\x20",
     "\x1b[30m%s\x1b[0m\x1b[34m%s\x1b[0m",
-    "3XHesAZ",
-    "50CDEpjY",
-    "532008irldWF",
-    "830OkoppF",
-    "10728288mSkrgA",
-    "337338nGHsWV",
-    "2088180oEcSyH",
-    "539LfRVMB",
-    "233706WYySck",
+    "4362300NdsJiN",
+    "\x1b[31m",
+    "\x1b[34m",
+    "Use\x20\x27npm\x20run\x20use\x27\x20for\x20all\x20available\x20commmands.",
+    "/**\x20@type\x20{import(\x27tailwindcss\x27).Config}\x20*/\x0aexport\x20default\x20{\x0a\x20\x20content:\x20[\x0a\x20\x20\x20\x20\x22./src/**/*.{html,js,jsx,ts,tsx,vue}\x22,\x0a\x20\x20\x20\x20\x22./public/**/*.html\x22,\x0a\x20\x20\x20\x20\x22./*.html\x22\x0a\x20\x20],\x0a\x20\x20theme:\x20{\x0a\x20\x20\x20\x20extend:\x20{},\x0a\x20\x20},\x0a\x20\x20plugins:\x20[],\x0a}",
+    "forEach",
+    "import\x20\x27./tw.css\x27",
+    "src/tw.css",
+    "tailwind.config.js",
+    "npm\x20install\x20pinia",
+    "orange",
+    ".\x20npm\x20run\x20use",
+    "src",
+    "tailwind",
+    "//@pinia",
+    "28fwWHda",
+    "import\x20{\x20createPinia\x20}\x20from\x20\x27pinia\x27;\x20//@pinia",
+    "src/main.js",
+    "message",
+    "18504FiqOMa",
+    "error",
+    "Unknown\x20command:",
+    "405858YcNMaH",
+    "src/stores/counter.js",
+    "//@tailwind",
+    "toLowerCase",
+    "216666wjMcYf",
+    "Error:\x20",
+    "src/stores",
+    "751984IZOclI",
+    "includes",
+    "\x1b[33m",
+    "utf8",
+    "inherit",
+    "blue",
+    "\x20installation\x20complete!",
+    "1jyRJsV",
+    "slice",
+    "log",
+    "reset",
+    "@tailwind\x20base;\x0a@tailwind\x20components;\x0a@tailwind\x20utilities;",
+    "\x1b[0m",
+    "import\x20\x27./tw.css\x27;\x20//@tailwind",
+    ".use(createPinia())",
+    "Running\x20TailwindCSS\x20installation...",
+    "npx\x20tailwindcss\x20init\x20-p",
   ];
-  _0x268d = function () {
-    return _0x239e59;
+  _0x1b3a = function () {
+    return _0x1cbc5a;
   };
-  return _0x268d();
+  return _0x1b3a();
 }
-
-// !libs
-const ls = [`pinia 🍍`, `tailwind 🌊`];
-
-// !cmds
-switch (command.toLowerCase()) {
-  case ``:
+const _0x78b3 = _0x4c3f;
+(function (_0x4be584, _0x36caa6) {
+  const _0x345210 = _0x4c3f,
+    _0x26e146 = _0x4be584();
+  while (!![]) {
+    try {
+      const _0x10d610 =
+        (-parseInt(_0x345210(0xa1)) / 0x1) *
+          (-parseInt(_0x345210(0x93)) / 0x2) +
+        (-parseInt(_0x345210(0x7a)) / 0x3) *
+          (-parseInt(_0x345210(0x90)) / 0x4) +
+        -parseInt(_0x345210(0x79)) / 0x5 +
+        parseInt(_0x345210(0x7d)) / 0x6 +
+        (-parseInt(_0x345210(0x8c)) / 0x7) *
+          (-parseInt(_0x345210(0x9a)) / 0x8) +
+        parseInt(_0x345210(0x97)) / 0x9 +
+        -parseInt(_0x345210(0x74)) / 0xa;
+      if (_0x10d610 === _0x36caa6) break;
+      else _0x26e146["push"](_0x26e146["shift"]());
+    } catch (_0x204e7c) {
+      _0x26e146["push"](_0x26e146["shift"]());
+    }
+  }
+})(_0x1b3a, 0x8ea63);
+import { execSync } from "child_process";
+import { writeFileSync, mkdirSync, existsSync, readFileSync } from "fs";
+const colors = {
+  orange: "\x1b[38;5;214m",
+  blue: _0x78b3(0x7f),
+  reset: _0x78b3(0x6f),
+  green: "\x1b[32m",
+  red: _0x78b3(0x7e),
+  yellow: _0x78b3(0x9c),
+};
+function runCommand(_0x122479) {
+  const _0x1eebcd = _0x78b3;
+  try {
+    return execSync(_0x122479, { stdio: _0x1eebcd(0x9e) }), !![];
+  } catch (_0xaf43b6) {
+    return (
+      console["error"](
+        colors[_0x1eebcd(0x75)] +
+          "Error:\x20" +
+          _0xaf43b6[_0x1eebcd(0x8f)] +
+          colors["reset"]
+      ),
+      ![]
+    );
+  }
+}
+function createFile(_0x15000f, _0x387616) {
+  const _0x53e05d = _0x78b3;
+  try {
+    return writeFileSync(_0x15000f, _0x387616), !![];
+  } catch (_0x2f4cef) {
+    return (
+      console[_0x53e05d(0x91)](
+        colors[_0x53e05d(0x75)] +
+          "Error\x20creating\x20" +
+          _0x15000f +
+          ":\x20" +
+          _0x2f4cef[_0x53e05d(0x8f)] +
+          colors[_0x53e05d(0xa4)]
+      ),
+      ![]
+    );
+  }
+}
+function updateMainFile(_0x559207) {
+  const _0x3e473b = _0x78b3;
+  try {
+    let _0x1c366f = readFileSync(_0x3e473b(0x8e), _0x3e473b(0x9d));
+    if (_0x559207 === _0x3e473b(0x8a))
+      !_0x1c366f[_0x3e473b(0x9b)](_0x3e473b(0x83)) &&
+        (_0x1c366f = _0x1c366f["replace"](_0x3e473b(0x95), _0x3e473b(0x70)));
+    else
+      _0x559207 === _0x3e473b(0x78) &&
+        (!_0x1c366f["includes"](
+          "import\x20{\x20createPinia\x20}\x20from\x20\x27pinia\x27"
+        ) &&
+          (_0x1c366f = _0x1c366f["replace"](_0x3e473b(0x8b), _0x3e473b(0x8d))),
+        !_0x1c366f["includes"](_0x3e473b(0x71)) &&
+          (_0x1c366f = _0x1c366f["replace"]("//#pinia", _0x3e473b(0x76))));
+    return writeFileSync("src/main.js", _0x1c366f), !![];
+  } catch (_0x57dc0a) {
+    return (
+      console[_0x3e473b(0x91)](
+        colors["red"] +
+          _0x3e473b(0x7b) +
+          _0x57dc0a[_0x3e473b(0x8f)] +
+          colors[_0x3e473b(0xa4)]
+      ),
+      ![]
+    );
+  }
+}
+async function setupTailwind() {
+  const _0x50e6e8 = _0x78b3;
+  if (
+    !runCommand(
+      "npm\x20install\x20-D\x20tailwindcss\x20postcss\x20autoprefixer"
+    )
+  )
+    return ![];
+  if (!runCommand(_0x50e6e8(0x73))) return ![];
+  const _0xbd25e2 = _0x50e6e8(0x81),
+    _0x116427 = _0x50e6e8(0x6e);
+  if (!createFile(_0x50e6e8(0x85), _0xbd25e2)) return ![];
+  !existsSync("src") && mkdirSync(_0x50e6e8(0x89));
+  if (!createFile(_0x50e6e8(0x84), _0x116427)) return ![];
+  if (!updateMainFile(_0x50e6e8(0x8a))) return ![];
+  return !![];
+}
+async function setupPinia() {
+  const _0x7690f6 = _0x78b3;
+  if (!runCommand(_0x7690f6(0x86))) return ![];
+  const _0x53ebf9 =
+    "import\x20{\x20defineStore\x20}\x20from\x20\x27pinia\x27;\x0a\x0aexport\x20const\x20useCounterStore\x20=\x20defineStore(\x27counter\x27,\x20{\x0a\x20\x20state:\x20()\x20=>\x20({\x20count:\x200\x20}),\x0a\x20\x20actions:\x20{\x0a\x20\x20\x20\x20increment()\x20{\x0a\x20\x20\x20\x20\x20\x20this.count++;\x0a\x20\x20\x20\x20},\x0a\x20\x20\x20\x20decrement()\x20{\x0a\x20\x20\x20\x20\x20\x20this.count--;\x0a\x20\x20\x20\x20},\x0a\x20\x20\x20\x20reset()\x20{\x0a\x20\x20\x20\x20\x20\x20this.count\x20=\x200;\x0a\x20\x20\x20\x20},\x0a\x20\x20},\x0a});";
+  !existsSync(_0x7690f6(0x99)) && mkdirSync(_0x7690f6(0x99));
+  if (!createFile(_0x7690f6(0x94), _0x53ebf9)) return ![];
+  if (!updateMainFile("pinia")) return ![];
+  return !![];
+}
+const pinia = async () => {
+    const _0x42e7b8 = _0x78b3;
+    console["log"](
+      colors[_0x42e7b8(0x87)] +
+        "Running\x20Pinia\x20installation..." +
+        colors[_0x42e7b8(0xa4)]
+    );
+    try {
+      const _0x36439a = await setupPinia();
+      _0x36439a &&
+        console[_0x42e7b8(0xa3)](
+          colors["yellow"] +
+            "🍍\x20Pinia" +
+            colors[_0x42e7b8(0xa4)] +
+            colors[_0x42e7b8(0x9f)] +
+            _0x42e7b8(0xa0) +
+            colors["reset"]
+        );
+    } catch (_0x219508) {
+      console[_0x42e7b8(0x91)](
+        colors["red"] +
+          "Error:\x20" +
+          _0x219508[_0x42e7b8(0x8f)] +
+          colors[_0x42e7b8(0xa4)]
+      );
+    }
+  },
+  tailwind = async () => {
+    const _0x9ca353 = _0x78b3;
+    console[_0x9ca353(0xa3)](
+      colors[_0x9ca353(0x87)] + _0x9ca353(0x72) + colors[_0x9ca353(0xa4)]
+    );
+    try {
+      const _0xdbb90e = await setupTailwind();
+      _0xdbb90e &&
+        console[_0x9ca353(0xa3)](
+          colors["yellow"] +
+            "🌊\x20TailwindCSS" +
+            colors[_0x9ca353(0xa4)] +
+            colors[_0x9ca353(0x9f)] +
+            _0x9ca353(0xa0) +
+            colors["reset"]
+        );
+    } catch (_0x44b641) {
+      console["error"](
+        colors[_0x9ca353(0x75)] +
+          _0x9ca353(0x98) +
+          _0x44b641[_0x9ca353(0x8f)] +
+          colors["reset"]
+      );
+    }
+  },
+  args = process["argv"][_0x78b3(0xa2)](0x2),
+  command = args[0x0]?.[_0x78b3(0x96)]() || "",
+  help = () => {
+    const _0x53d9f7 = _0x78b3;
+    ls[_0x53d9f7(0x82)]((_0x2aaf63, _0x2f07ef) => {
+      const _0x58cb2b = _0x53d9f7;
+      console[_0x58cb2b(0xa3)](
+        _0x58cb2b(0x7c),
+        _0x2f07ef + 0x1 + _0x58cb2b(0x88),
+        "\x20" + _0x2aaf63
+      );
+    }),
+      console[_0x53d9f7(0xa3)]();
+  },
+  ls = ["pinia\x20🍍", _0x78b3(0x77)];
+switch (command) {
+  case "":
     help();
     break;
-  case `pinia`:
+  case _0x78b3(0x78):
     pinia();
     break;
-  case `tailwind`:
+  case _0x78b3(0x8a):
     tailwind();
     break;
   default:
-    console.error("⚠️ Unknown command. Please provide a valid command.");
-    console.log(
-      "\x1b[33m%s\x1b[0m",
-      "Run `npm run use` for all available command"
-    );
-    break;
+    console["error"](
+      colors[_0x78b3(0x75)] + _0x78b3(0x92) + colors["reset"] + "\x20" + command
+    ),
+      console[_0x78b3(0xa3)](
+        colors["yellow"] + _0x78b3(0x80) + colors["reset"]
+      );
 }
