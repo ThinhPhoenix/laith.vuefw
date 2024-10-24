@@ -2,10 +2,10 @@
 
 This project provides a versatile and efficient foundation for building modern Vue applications. It combines the power of the following technologies:
 
-- **Vue.js**: A progressive JavaScript framework for crafting user interfaces.
-- **Vite**: A fast development server and build tool tailored for Vue projects.
-- **Tailwind CSS**: A utility-first CSS framework that allows for rapid and flexible styling.
-- **Vue Router**: Facilitates smooth navigation and structured routing within your application.
+- <img src="https://skillicons.dev/icons?i=vue&theme=light" alt="Router" width="20" height="20"> **Vue.js**: A progressive JavaScript framework for crafting user interfaces.
+- <img src="https://skillicons.dev/icons?i=vite&theme=light" alt="Router" width="20" height="20"> **Vite**: A fast development server and build tool tailored for Vue projects.
+- <img src="https://skillicons.dev/icons?i=tailwind&theme=light" alt="Router" width="20" height="20"> **Tailwind CSS**: A utility-first CSS framework that allows for rapid and flexible styling.
+- <img src="https://skillicons.dev/icons?i=nodejs&theme=light" alt="Router" width="20" height="20"> **Vue Router**: Facilitates smooth navigation and structured routing within your application.
 
 ### 🔑 Key Features
 
@@ -65,7 +65,7 @@ laith.vuefw/
 - **Tailwind CSS**: Customize the appearance of your application with Tailwind’s utility classes. For more details, refer to the [Tailwind CSS Documentation](https://tailwindcss.com/docs/).
 - **Vue Router**: Modify routing and navigation in the `src/router/index.js` file.
 - **Modular Components**: Add new UI components by placing them in the `src/components` directory.
-- **Pinia**: Run terminal code `node .laith.vuefw\pinia` at root to automatically install and setup pinia.
+- <img src="https://skillicons.dev/icons?i=pinia&theme=light" alt="Router" width="20" height="20"> **Pinia**: Run terminal code `node .laith.vuefw\pinia` at root to automatically install and setup pinia.
 
 ### 💡 Contributing
 
