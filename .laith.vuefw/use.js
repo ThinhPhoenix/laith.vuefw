@@ -8,6 +8,8 @@
  * @author thinhphoenix
  * @version 1.0.1
  */
+import * as path from "path"; // Add this line at the top of your file
+
 const _0x824e8b = _0x5a66;
 (function (_0x113d5c, _0x4d1226) {
   const _0x18dca4 = _0x5a66,
@@ -224,6 +226,7 @@ const help = () => {
       "\x20" + _0x5be96f
     );
   });
+  console.log();
 };
 function _0x268d() {
   const _0x239e59 = [
@@ -249,7 +252,7 @@ function _0x268d() {
 }
 
 // !libs
-const ls = [`pinia`, `tailwind`];
+const ls = [`pinia 🍍`, `tailwind 🌊`];
 
 // !cmds
 switch (command.toLowerCase()) {
@@ -258,6 +261,9 @@ switch (command.toLowerCase()) {
     break;
   case `pinia`:
     pinia();
+    break;
+  case `tailwind`:
+    tailwind();
     break;
   default:
     console.error("⚠️ Unknown command. Please provide a valid command.");
