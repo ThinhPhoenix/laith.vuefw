@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="containers">
     <div class="box">
       <div class="content">
         <span class="text-main">
@@ -31,7 +31,7 @@ import Redirect from "@/components/Redirect.vue";
   flex-direction: column;
   gap: 5px;
 }
-.container {
+.containers {
   display: flex;
   justify-content: center;
   align-items: center;

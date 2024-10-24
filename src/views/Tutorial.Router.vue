@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="containers">
     <div class="box">
       <span class="title">
         Automatically implements routing based on the 
@@ -45,7 +45,7 @@ import Redirect from '@/components/Redirect.vue';
 </script>
 
 <style scoped>
-.container {
+.containers {
   display: flex;
   justify-content: center;
   align-items: center;
