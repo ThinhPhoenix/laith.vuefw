@@ -7,26 +7,17 @@ import * as path from "path";
 const args = process.argv.slice(2);
 const command = args.join(" "); // Combine arguments into a single string
 
-switch (command) {
-    case `pinia`:
-        pinia()
-        break;
-    default:
-        console.error("Unknown command. Please provide a valid command.");
-        break;
-}
-
 // Function Definitions
 const pinia = () => {
-    console.log("Running Pinia installation...");
-    uninstallPinia();
-    installPinia();
-    createStoresDirectory();
-    updateMainFile();
-    createCounterStore();
-    console.log("Pinia installation complete!");
-}
-
+  console.log("\x1b[38;5;208m%s\x1b[0m", "Running Pinia installation...");
+  uninstallPinia();
+  installPinia();
+  createStoresDirectory();
+  updateMainFile();
+  createCounterStore();
+  console.log("\x1b[33m%s\x1b[0m", "🍍 Pinia ");
+  console.log("\x1b[34m%s\x1b[0m", "installation complete!");
+};
 
 function uninstallPinia() {
   try {
@@ -38,7 +29,7 @@ function uninstallPinia() {
 
 function installPinia() {
   try {
-    execSync("npm install pinia", { stdio: "inherit" });
+    execSync("npm i pinia", { stdio: "inherit" });
   } catch (error) {
     console.error("Error installing Pinia:", error);
   }
@@ -119,4 +110,13 @@ app.use(pinia);
   } catch (error) {
     console.error("Error updating main.js:", error);
   }
+}
+
+switch (command) {
+  case `pinia`:
+    pinia();
+    break;
+  default:
+    console.error("Unknown command. Please provide a valid command.");
+    break;
 }
